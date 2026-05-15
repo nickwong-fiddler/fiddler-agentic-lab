@@ -1,0 +1,553 @@
+{
+  "version": 1,
+  "model": "gpt-4o-mini",
+  "recorded_at": "2026-05-15T16:50:25Z",
+  "system_prompt_hash": "1789e8f75a4d0abb53bb176f189e4a578b6a51c86c2622aa551bd93fb00c07a5",
+  "tool_schemas_hash": "c07aad77d4d3639cff6b6ee64e65b3b0110cf8cfdda13338a3c07ed7cd050413",
+  "sample_queries": [
+    "What are the top 5 products by total revenue?",
+    "What is the average order value by region?",
+    "Are there any anomalies in revenue?",
+    "How many orders do we have in each category?",
+    "Show me the monthly revenue trend.",
+    "What are the top 5 products by total revenue?",
+    "Show me the monthly revenue trend.",
+    "What are the top 3 products by total revenue?",
+    "How does region affect average order value?",
+    "Tell me a joke about pirates.",
+    "What are the top 3 products by revenue?"
+  ],
+  "interactions": [
+    {
+      "request_fingerprint": "db951d17ca42f9a394dd43246c0949652f40e57a82d26af08c5e07eb1e0d1e07",
+      "request_preview": "What are the top 5 products by total revenue?",
+      "response": {
+        "content": "",
+        "additional_kwargs": {
+          "refusal": null
+        },
+        "tool_calls": [
+          {
+            "name": "compute_statistics",
+            "args": {
+              "column": "revenue",
+              "operation": "sum",
+              "group_by": "product"
+            },
+            "id": "call_yZFLDNLTzV5XIdYwGO1zOTEZ",
+            "type": "tool_call"
+          }
+        ],
+        "usage_metadata": {
+          "input_tokens": 450,
+          "output_tokens": 24,
+          "total_tokens": 474,
+          "input_token_details": {
+            "audio": 0,
+            "cache_read": 0
+          },
+          "output_token_details": {
+            "audio": 0,
+            "reasoning": 0
+          }
+        }
+      }
+    },
+    {
+      "request_fingerprint": "18440a55918c5849d768a6ebabbc9069bea5db23b8817528221815693bc9e8b8",
+      "request_preview": "[tool:compute_statistics] Sum of revenue by product:\nproduct\nBackpack                8173.13\nBluetooth Spe",
+      "response": {
+        "content": "The top 5 products by total revenue are:\n\n1. **Running Shoes**: $18,243.24\n2. **Wireless Headphones**: $19,771.66\n3. **Bluetooth Speaker**: $14,019.84\n4. **Coffee Maker**: $9,895.03\n5. **Desk Lamp**: $7,345.87",
+        "additional_kwargs": {
+          "refusal": null
+        },
+        "usage_metadata": {
+          "input_tokens": 581,
+          "output_tokens": 81,
+          "total_tokens": 662,
+          "input_token_details": {
+            "audio": 0,
+            "cache_read": 0
+          },
+          "output_token_details": {
+            "audio": 0,
+            "reasoning": 0
+          }
+        }
+      }
+    },
+    {
+      "request_fingerprint": "38f6fda04792db04995d190719b9863c4b1f8306f135792f5ef8ed1ca6909bbe",
+      "request_preview": "What is the average order value by region?",
+      "response": {
+        "content": "",
+        "additional_kwargs": {
+          "refusal": null
+        },
+        "tool_calls": [
+          {
+            "name": "compute_statistics",
+            "args": {
+              "column": "revenue",
+              "operation": "mean",
+              "group_by": "region"
+            },
+            "id": "call_7GRXP0crpw8rGGZRIFGsttnH",
+            "type": "tool_call"
+          }
+        ],
+        "usage_metadata": {
+          "input_tokens": 448,
+          "output_tokens": 24,
+          "total_tokens": 472,
+          "input_token_details": {
+            "audio": 0,
+            "cache_read": 0
+          },
+          "output_token_details": {
+            "audio": 0,
+            "reasoning": 0
+          }
+        }
+      }
+    },
+    {
+      "request_fingerprint": "97c8492361ee9ef4d6005340e636a14afa8d8daaade1d0681469bdd046d77331",
+      "request_preview": "[tool:compute_statistics] Mean of revenue by region:\nregion\nEast     183.35\nNorth    197.80\nSouth    208.2",
+      "response": {
+        "content": "The average order value by region is as follows:\n\n- **East:** $183.35\n- **North:** $197.80\n- **South:** $208.24\n- **West:** $217.96",
+        "additional_kwargs": {
+          "refusal": null
+        },
+        "usage_metadata": {
+          "input_tokens": 515,
+          "output_tokens": 46,
+          "total_tokens": 561,
+          "input_token_details": {
+            "audio": 0,
+            "cache_read": 0
+          },
+          "output_token_details": {
+            "audio": 0,
+            "reasoning": 0
+          }
+        }
+      }
+    },
+    {
+      "request_fingerprint": "fadc26ace1644cae1870bebdb3fac35d9b14f4f7028d870c6809ead908e8ccd5",
+      "request_preview": "Are there any anomalies in revenue?",
+      "response": {
+        "content": "",
+        "additional_kwargs": {
+          "refusal": null
+        },
+        "tool_calls": [
+          {
+            "name": "detect_anomalies",
+            "args": {
+              "column": "revenue"
+            },
+            "id": "call_RwK0QuEhYxT67AsQ1TGaAmWu",
+            "type": "tool_call"
+          }
+        ],
+        "usage_metadata": {
+          "input_tokens": 446,
+          "output_tokens": 17,
+          "total_tokens": 463,
+          "input_token_details": {
+            "audio": 0,
+            "cache_read": 0
+          },
+          "output_token_details": {
+            "audio": 0,
+            "reasoning": 0
+          }
+        }
+      }
+    },
+    {
+      "request_fingerprint": "c61213bf6aca32b9d2f1baa6c7f0a4dc7695c712020259241d73d4c1f5f686ef",
+      "request_preview": "[tool:detect_anomalies] Found 27 anomalies in revenue (outside -118.86 to 521.60):\norder_id       date  ",
+      "response": {
+        "content": "There are 27 anomalies in revenue, indicating values that fall outside the range of -118.86 to 521.60. Here are some of the notable anomalies:\n\n1. **ORD-1013**: Bluetooth Speaker, Revenue: 554.85, Date: 2024-03-16, Region: West\n2. **ORD-1020**: Running Shoes, Revenue: 532.30, Date: 2024-05-23, Region: North\n3. **ORD-1042**: Running Shoes, Revenue: 568.64, Date: 2024-08-26, Region: West\n4. **ORD-1065**: Running Shoes, Revenue: 973.90, Date: 2024-11-22, Region: South\n5. **ORD-1176**: Wireless Headphones, Revenue: 703.00, Date: 2024-12-07, Region: East\n6. **ORD-1260**: Running Shoes, Revenue: 944.25, Date: 2024-07-23, Region: South\n7. **ORD-1397**: Running Shoes, Revenue: 625.44, Date: 2024-05-31, Region: East\n8. **ORD-1496**: Wireless Headphones, Revenue: 727.90, Date: 2024-10-22, Region: North\n\nThese orders have significantly higher revenue values compared to the typical range. If you need more details or specific information about any of these anomalies, let me know!",
+        "additional_kwargs": {
+          "refusal": null
+        },
+        "usage_metadata": {
+          "input_tokens": 1136,
+          "output_tokens": 332,
+          "total_tokens": 1468,
+          "input_token_details": {
+            "audio": 0,
+            "cache_read": 0
+          },
+          "output_token_details": {
+            "audio": 0,
+            "reasoning": 0
+          }
+        }
+      }
+    },
+    {
+      "request_fingerprint": "afbb0a9d461580541116241d9c3d01db7a312f2ae57ccc1d7272e09ceb97d859",
+      "request_preview": "How many orders do we have in each category?",
+      "response": {
+        "content": "",
+        "additional_kwargs": {
+          "refusal": null
+        },
+        "tool_calls": [
+          {
+            "name": "compute_statistics",
+            "args": {
+              "column": "quantity",
+              "operation": "count",
+              "group_by": "category"
+            },
+            "id": "call_6I2dxP6vVnTfrojvTHTi3peu",
+            "type": "tool_call"
+          }
+        ],
+        "usage_metadata": {
+          "input_tokens": 449,
+          "output_tokens": 23,
+          "total_tokens": 472,
+          "input_token_details": {
+            "audio": 0,
+            "cache_read": 0
+          },
+          "output_token_details": {
+            "audio": 0,
+            "reasoning": 0
+          }
+        }
+      }
+    },
+    {
+      "request_fingerprint": "50296c69440e78069f8872b37d587109c393e2076975144f25b33f7584b1e592",
+      "request_preview": "[tool:compute_statistics] Count of quantity by category:\ncategory\nAccessories        98\nElectronics       ",
+      "response": {
+        "content": "Here are the counts of orders in each category:\n\n- Accessories: 98 orders\n- Electronics: 162 orders\n- Home & Kitchen: 112 orders\n- Sports: 128 orders",
+        "additional_kwargs": {
+          "refusal": null
+        },
+        "usage_metadata": {
+          "input_tokens": 510,
+          "output_tokens": 40,
+          "total_tokens": 550,
+          "input_token_details": {
+            "audio": 0,
+            "cache_read": 0
+          },
+          "output_token_details": {
+            "audio": 0,
+            "reasoning": 0
+          }
+        }
+      }
+    },
+    {
+      "request_fingerprint": "ae267b2a6e6bec459fe069f1d43a812747fd0e3fbb9e6334345a6a7ca4525592",
+      "request_preview": "Show me the monthly revenue trend.",
+      "response": {
+        "content": "",
+        "additional_kwargs": {
+          "refusal": null
+        },
+        "tool_calls": [
+          {
+            "name": "get_monthly_trend",
+            "args": {
+              "column": "revenue",
+              "operation": "sum"
+            },
+            "id": "call_eGXQaqKLfzj3J0uUq9CKzf3v",
+            "type": "tool_call"
+          }
+        ],
+        "usage_metadata": {
+          "input_tokens": 446,
+          "output_tokens": 22,
+          "total_tokens": 468,
+          "input_token_details": {
+            "audio": 0,
+            "cache_read": 0
+          },
+          "output_token_details": {
+            "audio": 0,
+            "reasoning": 0
+          }
+        }
+      }
+    },
+    {
+      "request_fingerprint": "6bb095cd240096d0b9c603308707d622e7017d7b4cf583c9190c281a5887cf28",
+      "request_preview": "[tool:get_monthly_trend] Monthly sum of revenue:\nmonth\n2024-01     8769.36\n2024-02     6344.79\n2024-03   ",
+      "response": {
+        "content": "Here is the monthly revenue trend for the year 2024:\n\n- **January:** $8,769.36\n- **February:** $6,344.79\n- **March:** $6,321.15\n- **April:** $6,147.82\n- **May:** $10,981.37\n- **June:** $7,932.03\n- **July:** $8,271.55\n- **August:** $11,381.83\n- **September:** $8,917.02\n- **October:** $7,045.67\n- **November:** $9,519.35\n- **December:** $9,052.55\n\nIf you need further analysis or insights, feel free to ask!",
+        "additional_kwargs": {
+          "refusal": null
+        },
+        "usage_metadata": {
+          "input_tokens": 617,
+          "output_tokens": 159,
+          "total_tokens": 776,
+          "input_token_details": {
+            "audio": 0,
+            "cache_read": 0
+          },
+          "output_token_details": {
+            "audio": 0,
+            "reasoning": 0
+          }
+        }
+      }
+    },
+    {
+      "request_fingerprint": "5a60bc6f8e0b59346a10103ea57665dc68351f35fe85970ee3c16f14f90211b2",
+      "request_preview": "[tool:compute_statistics] Sum of revenue by product:\nproduct\nBackpack                8173.13\nBluetooth Spe",
+      "response": {
+        "content": "The top 5 products by total revenue are:\n\n1. **Wireless Headphones**: $19,771.66\n2. **Running Shoes**: $18,243.24\n3. **Bluetooth Speaker**: $14,019.84\n4. **Coffee Maker**: $9,895.03\n5. **Backpack**: $8,173.13",
+        "additional_kwargs": {
+          "refusal": null
+        },
+        "usage_metadata": {
+          "input_tokens": 581,
+          "output_tokens": 81,
+          "total_tokens": 662,
+          "input_token_details": {
+            "audio": 0,
+            "cache_read": 0
+          },
+          "output_token_details": {
+            "audio": 0,
+            "reasoning": 0
+          }
+        }
+      }
+    },
+    {
+      "request_fingerprint": "8436eaef1556b1bd27850d86e133293bf2d5cec6c805ffee77434df1766c03ed",
+      "request_preview": "[tool:get_monthly_trend] Monthly sum of revenue:\nmonth\n2024-01     8769.36\n2024-02     6344.79\n2024-03   ",
+      "response": {
+        "content": "Here is the monthly revenue trend for the year 2024:\n\n- **January**: $8,769.36\n- **February**: $6,344.79\n- **March**: $6,321.15\n- **April**: $6,147.82\n- **May**: $10,981.37\n- **June**: $7,932.03\n- **July**: $8,271.55\n- **August**: $11,381.83\n- **September**: $8,917.02\n- **October**: $7,045.67\n- **November**: $9,519.35\n- **December**: $9,052.55\n\nIf you need further analysis or insights, feel free to ask!",
+        "additional_kwargs": {
+          "refusal": null
+        },
+        "usage_metadata": {
+          "input_tokens": 617,
+          "output_tokens": 171,
+          "total_tokens": 788,
+          "input_token_details": {
+            "audio": 0,
+            "cache_read": 0
+          },
+          "output_token_details": {
+            "audio": 0,
+            "reasoning": 0
+          }
+        }
+      }
+    },
+    {
+      "request_fingerprint": "844362bdea6772cf91ac71d3a6b439fe11d7b09b8c5cba402e9619293ea71397",
+      "request_preview": "What are the top 3 products by total revenue?",
+      "response": {
+        "content": "",
+        "additional_kwargs": {
+          "refusal": null
+        },
+        "tool_calls": [
+          {
+            "name": "compute_statistics",
+            "args": {
+              "column": "revenue",
+              "operation": "sum",
+              "group_by": "product"
+            },
+            "id": "call_aKfrSG9ecumVfknBCH05FB4D",
+            "type": "tool_call"
+          }
+        ],
+        "usage_metadata": {
+          "input_tokens": 450,
+          "output_tokens": 24,
+          "total_tokens": 474,
+          "input_token_details": {
+            "audio": 0,
+            "cache_read": 0
+          },
+          "output_token_details": {
+            "audio": 0,
+            "reasoning": 0
+          }
+        }
+      }
+    },
+    {
+      "request_fingerprint": "9449bc924f98c43580fd873107a7186fed56a33562c6e011dfc6b2be1d56e3f1",
+      "request_preview": "[tool:compute_statistics] Sum of revenue by product:\nproduct\nBackpack                8173.13\nBluetooth Spe",
+      "response": {
+        "content": "The top 3 products by total revenue are:\n\n1. **Wireless Headphones**: $19,771.66\n2. **Running Shoes**: $18,243.24\n3. **Bluetooth Speaker**: $14,019.84",
+        "additional_kwargs": {
+          "refusal": null
+        },
+        "usage_metadata": {
+          "input_tokens": 581,
+          "output_tokens": 53,
+          "total_tokens": 634,
+          "input_token_details": {
+            "audio": 0,
+            "cache_read": 0
+          },
+          "output_token_details": {
+            "audio": 0,
+            "reasoning": 0
+          }
+        }
+      }
+    },
+    {
+      "request_fingerprint": "bc14a00786d640d4add4ec034dd539129635b98bbd93f61476a31abeda635e55",
+      "request_preview": "How does region affect average order value?",
+      "response": {
+        "content": "",
+        "additional_kwargs": {
+          "refusal": null
+        },
+        "tool_calls": [
+          {
+            "name": "compute_statistics",
+            "args": {
+              "column": "revenue",
+              "operation": "mean",
+              "group_by": "region"
+            },
+            "id": "call_9ztYpmtvI0XF5nVBOx2QcynM",
+            "type": "tool_call"
+          }
+        ],
+        "usage_metadata": {
+          "input_tokens": 447,
+          "output_tokens": 24,
+          "total_tokens": 471,
+          "input_token_details": {
+            "audio": 0,
+            "cache_read": 0
+          },
+          "output_token_details": {
+            "audio": 0,
+            "reasoning": 0
+          }
+        }
+      }
+    },
+    {
+      "request_fingerprint": "847ca3319ebc418a5b6c584fd17538933319d022f4e5eee7a800a538eadda2ef",
+      "request_preview": "[tool:compute_statistics] Mean of revenue by region:\nregion\nEast     183.35\nNorth    197.80\nSouth    208.2",
+      "response": {
+        "content": "The average order value by region is as follows:\n\n- **East:** $183.35\n- **North:** $197.80\n- **South:** $208.24\n- **West:** $217.96\n\nIt appears that the West region has the highest average order value, while the East region has the lowest.",
+        "additional_kwargs": {
+          "refusal": null
+        },
+        "usage_metadata": {
+          "input_tokens": 514,
+          "output_tokens": 68,
+          "total_tokens": 582,
+          "input_token_details": {
+            "audio": 0,
+            "cache_read": 0
+          },
+          "output_token_details": {
+            "audio": 0,
+            "reasoning": 0
+          }
+        }
+      }
+    },
+    {
+      "request_fingerprint": "81ae3cb424af5e19ba290755225d288d928aae72b0d32bbab9b979f123f13e87",
+      "request_preview": "Tell me a joke about pirates.",
+      "response": {
+        "content": "I'm here to assist with e-commerce data analysis. If you have any questions related to sales data, feel free to ask!",
+        "additional_kwargs": {
+          "refusal": null
+        },
+        "usage_metadata": {
+          "input_tokens": 446,
+          "output_tokens": 26,
+          "total_tokens": 472,
+          "input_token_details": {
+            "audio": 0,
+            "cache_read": 0
+          },
+          "output_token_details": {
+            "audio": 0,
+            "reasoning": 0
+          }
+        }
+      }
+    },
+    {
+      "request_fingerprint": "68f1d347f58b4633141e5984f0e1c996aaa7e866a81bb3e166fab1437461bb9c",
+      "request_preview": "What are the top 3 products by revenue?",
+      "response": {
+        "content": "",
+        "additional_kwargs": {
+          "refusal": null
+        },
+        "tool_calls": [
+          {
+            "name": "lookup_orders",
+            "args": {
+              "sort_by": "revenue",
+              "limit": "3",
+              "filter_column": "all",
+              "filter_value": "all"
+            },
+            "id": "call_0LIhpGw6jGvR04F6ng9rGBYA",
+            "type": "tool_call"
+          }
+        ],
+        "usage_metadata": {
+          "input_tokens": 449,
+          "output_tokens": 30,
+          "total_tokens": 479,
+          "input_token_details": {
+            "audio": 0,
+            "cache_read": 0
+          },
+          "output_token_details": {
+            "audio": 0,
+            "reasoning": 0
+          }
+        }
+      }
+    },
+    {
+      "request_fingerprint": "1618a9c11ecc4d36e6156afdd9c95729f38a522ad077226bc4f4b1d84da21bce",
+      "request_preview": "[tool:lookup_orders] order_id       date       product category  quantity  unit_price  revenue region",
+      "response": {
+        "content": "The top 3 products by revenue are:\n\n1. **Running Shoes** - Revenue: $973.90\n2. **Running Shoes** - Revenue: $944.25\n3. **Running Shoes** - Revenue: $927.35\n\nIt appears that all three entries are for the same product, \"Running Shoes,\" with different order details.",
+        "additional_kwargs": {
+          "refusal": null
+        },
+        "usage_metadata": {
+          "input_tokens": 595,
+          "output_tokens": 73,
+          "total_tokens": 668,
+          "input_token_details": {
+            "audio": 0,
+            "cache_read": 0
+          },
+          "output_token_details": {
+            "audio": 0,
+            "reasoning": 0
+          }
+        }
+      }
+    }
+  ]
+}
