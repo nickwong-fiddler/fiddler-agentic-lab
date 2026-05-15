@@ -1,0 +1,30 @@
+Fiddler_Ecommerce_Agent_Offline.ipynb
+  s_145862719c4af1::t_675606b266656d 1-371,381-394,396-399,402-758,761-1002
+  s_145862719c4af1::t_bd1ed98055f186 759-760
+  s_145862719c4af1::t_2d46908ecf3bf1 372-380,395,400-401
+record_cassette.py
+  s_145862719c4af1::t_f2ec762cb9479e 1-41,43-379,392-393,424-427,430-431,433-434,436-442,444,446-447,449-450,452-457,459-502,520-525,529-582
+  s_145862719c4af1::t_8c901dfefa32da 503-519,526-528
+  s_145862719c4af1::t_66181f1a93f377 380-391,394-423,428-429,432,435,443,445,448,451,458
+  s_145862719c4af1::t_4c98d339de35ab 42
+PREREQUISITES_OFFLINE.md
+  s_145862719c4af1::t_2e7b811f73cb96 1-114
+README.md
+  s_145862719c4af1::t_3215263869efbb 5-15,18-19,28-37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.8",
+  "base_commit_sha": "e9184e95407c4c327273771744dbac3a5b190017",
+  "prompts": {},
+  "sessions": {
+    "s_145862719c4af1": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_1de5fe954ffeX0nTW7I8RggUHz",
+        "model": "claude-opus-4-7@default"
+      },
+      "human_author": "Nick Wong <nickwong@fiddler.ai>"
+    }
+  }
+}
