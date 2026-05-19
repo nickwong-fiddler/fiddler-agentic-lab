@@ -35,7 +35,7 @@ If any of those three boxes can't be checked, stop here and ping me.
 Click this link:
 
 ```
-https://colab.research.google.com/github/nickwong-fiddler/fiddler-agentic-monitoring-lab/blob/main/Fiddler_Ecommerce_Agent_Offline.ipynb
+https://colab.research.google.com/github/nickwong-fiddler/fiddler-agentic-lab/blob/main/Fiddler_Ecommerce_Agent_Offline.ipynb
 ```
 
 When Colab opens the notebook:

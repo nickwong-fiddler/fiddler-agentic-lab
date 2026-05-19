@@ -8,8 +8,8 @@ Pick the one that matches your network access:
 
 | Notebook | When to use | Prerequisites | Open in Colab |
 |---|---|---|---|
-| [`Fiddler_Ecommerce_Agent.ipynb`](Fiddler_Ecommerce_Agent.ipynb) | Your environment can reach `api.openai.com` | [`PREREQUISITES.md`](PREREQUISITES.md) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nickwong-fiddler/fiddler-agentic-monitoring-lab/blob/main/Fiddler_Ecommerce_Agent.ipynb) |
-| [`Fiddler_Ecommerce_Agent_Offline.ipynb`](Fiddler_Ecommerce_Agent_Offline.ipynb) | Your environment **cannot** reach external LLM endpoints — uses pre-recorded LLM responses bundled in `cassette.json` | [`PREREQUISITES_OFFLINE.md`](PREREQUISITES_OFFLINE.md) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nickwong-fiddler/fiddler-agentic-monitoring-lab/blob/main/Fiddler_Ecommerce_Agent_Offline.ipynb) |
+| [`Fiddler_Ecommerce_Agent.ipynb`](Fiddler_Ecommerce_Agent.ipynb) | Your environment can reach `api.openai.com` | [`PREREQUISITES.md`](PREREQUISITES.md) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nickwong-fiddler/fiddler-agentic-lab/blob/main/Fiddler_Ecommerce_Agent.ipynb) |
+| [`Fiddler_Ecommerce_Agent_Offline.ipynb`](Fiddler_Ecommerce_Agent_Offline.ipynb) | Your environment **cannot** reach external LLM endpoints — uses pre-recorded LLM responses bundled in `cassette.json` | [`PREREQUISITES_OFFLINE.md`](PREREQUISITES_OFFLINE.md) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nickwong-fiddler/fiddler-agentic-lab/blob/main/Fiddler_Ecommerce_Agent_Offline.ipynb) |
 
 Both variants reach the same end state: a fully observable, evaluable, and protected LangGraph agent in Fiddler. The offline variant trades real-time LLM responses for zero external-LLM dependencies — every other lesson (instrumentation, traces, evaluator rules, guardrails) is identical.
 
