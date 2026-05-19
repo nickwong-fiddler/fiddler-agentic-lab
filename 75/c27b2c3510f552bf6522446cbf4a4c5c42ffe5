@@ -1,0 +1,23 @@
+COLAB_DRY_RUN_INSTRUCTIONS.md
+  s_7559fd82014b45::t_5ea8920c3c227d 1-170
+Fiddler_Ecommerce_Agent_Offline.ipynb
+  s_7559fd82014b45::t_c6443563188169 54-85
+README.md
+  s_7559fd82014b45::t_471d9bf05fe71f 9-12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.9",
+  "base_commit_sha": "75c27b2c3510f552bf6522446cbf4a4c5c42ffe5",
+  "prompts": {},
+  "sessions": {
+    "s_7559fd82014b45": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_1bf81ffd3ffenYlde0eO4gIaKw",
+        "model": "claude-opus-4-7@default"
+      },
+      "human_author": "Nick Wong <nickwong@fiddler.ai>"
+    }
+  }
+}
