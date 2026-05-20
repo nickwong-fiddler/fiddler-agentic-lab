@@ -1,0 +1,21 @@
+Fiddler_Ecommerce_Agent.ipynb
+  s_7559fd82014b45::t_9d3920fb7118ed 27-43
+Fiddler_Ecommerce_Agent_Offline.ipynb
+  s_7559fd82014b45::t_cd8db1be55e5f3 31-47
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.11",
+  "base_commit_sha": "80ff54d5105944168572a4d564fc8a070dcd8ffe",
+  "prompts": {},
+  "sessions": {
+    "s_7559fd82014b45": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_1bf81ffd3ffenYlde0eO4gIaKw",
+        "model": "claude-opus-4-7@default"
+      },
+      "human_author": "Nick Wong <nickwong@fiddler.ai>"
+    }
+  }
+}
