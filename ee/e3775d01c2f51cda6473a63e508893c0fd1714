@@ -1,0 +1,19 @@
+AIG_PARTICIPANT_EMAIL.md
+  s_7559fd82014b45::t_39fdb3abb9b885 1-61
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.11",
+  "base_commit_sha": "eee3775d01c2f51cda6473a63e508893c0fd1714",
+  "prompts": {},
+  "sessions": {
+    "s_7559fd82014b45": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_1bf81ffd3ffenYlde0eO4gIaKw",
+        "model": "claude-opus-4-7@default"
+      },
+      "human_author": "Nick Wong <nickwong@fiddler.ai>"
+    }
+  }
+}
